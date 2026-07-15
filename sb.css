@@ -151,3 +151,58 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
 .reveal.is-visible{opacity:1;transform:none}
+
+/* ---- inner pages ---- */
+.page-head{text-align:center;max-width:760px;margin:0 auto;padding:60px 0 0}
+.page-head h1{font-size:clamp(2.6rem,5vw,4rem)}
+.page-head p{margin-top:16px;color:var(--muted);font-size:1.12rem}
+.tabs{display:grid;gap:10px}
+@media(min-width:768px){.tabs{grid-template-columns:repeat(3,1fr)}}
+.tab{border:1px solid var(--forest);border-radius:999px;padding:13px 18px;font-weight:600;font-size:.9rem;color:var(--forest);background:transparent;cursor:pointer;transition:all .2s;text-align:center;font-family:inherit}
+.tab:hover{background:#fff}
+.tab.active{background:var(--forest);color:#fff}
+.tabpanel{display:none}
+.tabpanel.active{display:block;animation:fadein .4s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.tbl-wrap{overflow-x:auto;margin-top:26px}
+.ptable{width:100%;min-width:640px;border-collapse:collapse;text-align:left;font-size:.95rem}
+.ptable thead th{padding:0 14px 12px;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line)}
+.ptable tbody th{font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--forest);font-weight:600;text-align:left}
+.ptable tbody th,.ptable td{padding:16px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.ptable tbody tr:nth-child(odd){background:#fff}
+.detail-list{margin-top:8px;border-top:1px solid var(--line)}
+.detail-list div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.detail-list dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.detail-list dd{margin:0;color:var(--ink);font-weight:500}
+.img-pair{display:grid;gap:16px;margin-top:26px}
+@media(min-width:640px){.img-pair{grid-template-columns:1fr 1fr}}
+.img-pair img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+.forms-pills{display:flex;gap:8px;flex-wrap:wrap}
+.forms-pills span{background:var(--forest);color:#fff;border-radius:999px;padding:7px 15px;font-size:.8rem;font-weight:600}
+.steps{display:grid;gap:22px}
+@media(min-width:768px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.step b.n{color:var(--gold);font-size:.8rem;letter-spacing:.14em}
+.step h3{font-size:1.25rem;margin:14px 0 8px}
+.step p{color:var(--muted);font-size:.92rem}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font:inherit;font-size:.95rem;background:var(--cream);color:var(--ink);outline:none;transition:border-color .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--forest)}
+.form-row{display:grid;gap:18px}
+@media(min-width:640px){.form-row{grid-template-columns:1fr 1fr}}
+.ok-msg{display:none;color:var(--green);font-weight:600;margin-top:12px}
+.vm-grid{display:grid;gap:26px;margin-top:8px}
+@media(min-width:768px){.vm-grid{grid-template-columns:1fr 1fr}}
+.vm{background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:var(--radius);padding:30px}
+.vm h3{font-size:1.5rem;margin-bottom:12px}
+.vm p{color:var(--muted)}
+.appr-grid{display:grid;gap:26px;margin-top:8px}
+@media(min-width:768px){.appr-grid{grid-template-columns:repeat(3,1fr)}}
+.appr h3{font-size:1.3rem;margin-bottom:10px}
+.appr p{color:var(--muted);font-size:.95rem}
+.badge-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px}
+.badge{display:flex;gap:12px;align-items:center;background:var(--cream-2);border:1px solid var(--line);border-radius:14px;padding:14px 20px}
+.badge b{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--forest)}
+.badge span{font-size:.82rem;color:var(--muted)}
