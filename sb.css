@@ -46,8 +46,8 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 @media(max-width:560px){.topbar-soc{display:none}}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:50;background:var(--cream);transition:box-shadow .3s}
-.nav.scrolled{box-shadow:0 1px 0 var(--line)}
+.nav{position:sticky;top:0;z-index:50;background:#E4EFDF;transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 2px 12px rgba(21,58,44,.08)}
 .nav-in{height:76px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px;color:var(--forest)}
 .brand img{width:42px;height:42px;object-fit:contain}
@@ -56,6 +56,8 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 @media(min-width:1024px){.nav-links{display:flex}}
 .nav-links a{font-size:.95rem;font-weight:500;color:var(--forest);position:relative;padding:6px 0}
 .nav-links a:hover{color:var(--green)}
+.nav-links a.pill-green{color:#fff !important}
+.nav-links a.pill-gold{color:var(--forest) !important}
 .nav-links a.active::after{content:"";position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:34px;height:8px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='8'%3E%3Cpath d='M1 6C10 1 26 1 35 6' fill='none' stroke='%23C9A227' stroke-width='2'/%3E%3C/svg%3E")}
 .burger{display:inline-flex;background:none;border:0;color:var(--forest);cursor:pointer;padding:6px}
 @media(min-width:1024px){.burger{display:none}}
@@ -68,7 +70,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 
 /* hero */
 .hero{position:relative;min-height:74vh;display:flex;align-items:center;overflow:hidden;background:var(--forest)}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,33,25,.82),rgba(15,33,25,.52) 55%,rgba(15,33,25,.22))}
 .hero-arc{position:absolute;bottom:-11rem;left:-6rem;width:40rem;height:40rem;pointer-events:none;opacity:.9}
 @media(min-width:768px){.hero-arc{bottom:-16rem;left:-8rem;width:50rem;height:50rem}}
@@ -206,3 +208,13 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 .badge{display:flex;gap:12px;align-items:center;background:var(--cream-2);border:1px solid var(--line);border-radius:14px;padding:14px 20px}
 .badge b{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--forest)}
 .badge span{font-size:.82rem;color:var(--muted)}
+
+/* inner-page header image band */
+.subhero{position:relative;overflow:hidden;background:var(--forest);min-height:42vh;display:flex;align-items:center;text-align:center}
+.subhero .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.subhero .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,33,25,.72),rgba(15,33,25,.55))}
+.subhero-in{position:relative;z-index:2;max-width:840px;margin:0 auto;padding:78px 24px}
+.subhero .eyebrow{display:block;margin-bottom:16px}
+.subhero h1{color:#fff;font-size:clamp(2.4rem,5vw,3.8rem)}
+.subhero p{color:rgba(255,255,255,.85);margin-top:14px;font-size:1.1rem}
+.subhero .arc{padding:22px 0 0}
