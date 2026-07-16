@@ -299,3 +299,14 @@ footer{background:var(--navy);color:#a9c2b0;padding-top:70px}
   .hero-cta .btn{padding:12px 18px;font-size:.85rem}
   .hero-stats{gap:20px;margin-top:32px}
 }
+
+/* ---- Image subhero (contact page header) — mirrors the sb.css pages ---- */
+.subhero{position:relative;overflow:hidden;background:var(--ink);min-height:32vh;display:flex;align-items:center;text-align:center}
+.subhero .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.subhero .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,33,25,.72),rgba(15,33,25,.55))}
+.subhero-in{position:relative;z-index:2;max-width:840px;margin:0 auto;padding:54px 24px}
+.subhero .eyebrow{display:block;margin-bottom:14px;color:var(--gold)}
+.subhero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.08}
+.subhero p{color:rgba(255,255,255,.85);margin-top:14px;font-size:1.06rem}
+.arc{display:flex;justify-content:center;align-items:center;padding:34px 0}
+.arc svg{display:block}
