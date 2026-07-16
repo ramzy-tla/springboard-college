@@ -218,3 +218,14 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:600;color:v
 .subhero h1{color:#fff;font-size:clamp(2.4rem,5vw,3.8rem)}
 .subhero p{color:rgba(255,255,255,.85);margin-top:14px;font-size:1.1rem}
 .subhero .arc{padding:22px 0 0}
+
+/* Why-us feature cards */
+.feat-grid{display:grid;gap:22px;margin-top:44px}
+@media(min-width:640px){.feat-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.feat-grid{grid-template-columns:repeat(4,1fr)}}
+.feat{background:#fff;border:1px solid rgba(30,43,34,.1);border-radius:var(--radius);padding:26px 22px;transition:transform .25s ease,box-shadow .25s ease}
+.feat:hover{transform:translateY(-4px);box-shadow:0 24px 44px -28px rgba(21,58,44,.45)}
+.feat-ic{display:inline-flex;width:50px;height:50px;border-radius:14px;background:rgba(46,158,76,.1);color:var(--green);align-items:center;justify-content:center;margin-bottom:16px}
+.feat-ic svg{width:26px;height:26px}
+.feat h3{font-size:1.12rem;margin-bottom:8px}
+.feat p{color:var(--muted);font-size:.94rem;line-height:1.6}
